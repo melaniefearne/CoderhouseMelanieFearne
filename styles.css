@@ -1,0 +1,83 @@
+/*TRANSICIONES*/
+
+.transicion:hover {
+    transition: 4s;
+    font-size: 2rem;
+  }
+
+  body {               /*GRADIENTE en el Body*/
+    width: 98%;
+    height: 100vh;
+    font-family:'Poppins', sans-serif; 
+    background-color: #c7a7b7;
+    background-image: linear-gradient(315deg, #af8c9d 0%, #8cacac 74%); 
+    margin: 20px;
+    padding: 10px ;
+    display: flex;
+    flex-flow: column nowrap;
+    }
+
+.mi-header {
+    position: relative;
+    background-color: rgba(248, 255, 255, 0.192);
+}
+
+ .logo {
+     width: 60%;
+     padding-left: 40px;
+
+ }
+
+.btn-burguer {
+    display: none;
+}
+
+.h5 {
+    max-width: 100%;
+    margin-top:5em;
+    margin-bottom: 4em;
+    margin-left: 4em;
+    margin-right: 4em;
+    height: auto;
+}
+.cards{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.blockquote{
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.btn-cerrar {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .btn-burguer {
+        display: block;
+    }
+    .miNavbar {
+        position: absolute;
+        left: 0;
+        top: -300px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .miNavbar a {
+        width: 100%;
+    }
+    .btn-cerrar {
+        display: block;
+    }
+}
+
+.miNavbar:target {
+    top: 0;
+}
+.btn {
+    margin-top: 20px;
+    background-color: rgba(113, 57, 138, 0.705);
+
+}
